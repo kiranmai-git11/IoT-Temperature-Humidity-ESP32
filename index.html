@@ -1,98 +1,135 @@
-<h1>IoT Temperature & Humidity Project</h1>
-# 🌡️ IoT-Based Temperature & Humidity Monitoring using ESP32 and DHT11  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IoT Temperature & Humidity Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #555;
+            padding: 8px;
+        }
+        th {
+            background-color: #ddd;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
 
-## 📘 Project Overview  
-This project monitors **real-time temperature and humidity** using the **ESP32 microcontroller** and a **DHT11 sensor**.  
-The data is uploaded to the **ThingSpeak IoT Cloud**, where it is displayed using live gauges and charts.  
-The entire setup is simulated on **Wokwi**, so no physical hardware is required.  
+<body>
 
----
+<h1>🌡 IoT Temperature & Humidity Monitoring using ESP32 and DHT11</h1>
 
-## 🧠 Features  
-- Measures **temperature** and **humidity** continuously  
-- Uploads sensor data to **ThingSpeak Cloud** using Wi-Fi  
-- Displays **real-time data visualization** (gauges and graphs)  
-- Simulated on **Wokwi** for testing without hardware  
-- Fully open-source and easy to implement  
+<div class="section">
+    <h2>📘 Project Overview</h2>
+    <p>
+        This project monitors <b>real-time temperature and humidity</b> using the 
+        <b>ESP32 microcontroller</b> and a <b>DHT11 sensor</b>.
+        The data is uploaded to the <b>ThingSpeak IoT Cloud</b>, where it is displayed
+        using live gauges and charts. The entire setup is simulated on <b>Wokwi</b>.
+    </p>
+</div>
 
----
+<div class="section">
+    <h2>🧠 Features</h2>
+    <ul>
+        <li>Measures <b>temperature</b> and <b>humidity</b> continuously</li>
+        <li>Uploads sensor data to <b>ThingSpeak Cloud</b> using Wi-Fi</li>
+        <li>Displays real-time data visualization (gauges & graphs)</li>
+        <li>Simulated on <b>Wokwi</b> — no hardware required</li>
+    </ul>
+</div>
 
-## 🧩 Components Used  
-| Component | Description |
-|------------|-------------|
-| ESP32 | WiFi-enabled microcontroller |
-| DHT11 Sensor | Measures temperature and humidity |
-| Wokwi | Online ESP32 & Arduino simulator |
-| ThingSpeak | IoT cloud platform for visualization |
+<div class="section">
+    <h2>🧩 Components Used</h2>
+    <table>
+        <tr><th>Component</th><th>Description</th></tr>
+        <tr><td>ESP32</td><td>WiFi-enabled microcontroller</td></tr>
+        <tr><td>DHT11 Sensor</td><td>Measures temperature & humidity</td></tr>
+        <tr><td>Wokwi</td><td>Online simulator for ESP32</td></tr>
+        <tr><td>ThingSpeak</td><td>IoT cloud platform for data visualization</td></tr>
+    </table>
+</div>
 
----
+<div class="section">
+    <h2>⚙ Circuit Connections</h2>
+    <table>
+        <tr><th>DHT11 Pin</th><th>ESP32 Pin</th></tr>
+        <tr><td>VCC</td><td>3.3V</td></tr>
+        <tr><td>GND</td><td>GND</td></tr>
+        <tr><td>DATA</td><td>D15</td></tr>
+    </table>
+</div>
 
-## ⚙️ Circuit Connection  
-| DHT11 Pin | ESP32 Pin |
-|------------|-----------|
-| VCC | 3.3V |
-| GND | GND |
-| DATA | D15 |
+<div class="section">
+    <h2>💻 Working Principle</h2>
+    <ol>
+        <li>ESP32 reads temperature and humidity from DHT11.</li>
+        <li>Connects to Wi-Fi network.</li>
+        <li>Sends data to ThingSpeak using HTTP API.</li>
+        <li>ThingSpeak displays real-time gauges and charts.</li>
+    </ol>
+</div>
 
----
+<div class="section">
+    <h2>📊 ThingSpeak Dashboard</h2>
+    <p>
+        View the live IoT data here:  
+        <a href="https://thingspeak.com/channels/3154375" target="_blank">
+            👉 ThingSpeak Channel – Kiranmai
+        </a>
+    </p>
+</div>
 
-## 💻 Working Principle  
-1. The ESP32 reads temperature and humidity data from the DHT11 sensor.  
-2. It connects to a Wi-Fi network.  
-3. Sends the data to ThingSpeak via HTTP requests using your channel API key.  
-4. ThingSpeak displays the readings as live graphs and gauges.  
+<div class="section">
+    <h2>🧪 Simulation Platform</h2>
+    <p>This project is simulated fully on <b>Wokwi</b>.</p>
+</div>
 
----
+<div class="section">
+    <h2>🏁 Output Example</h2>
+    <ul>
+        <li>Temperature: 24°C</li>
+        <li>Humidity: 40%</li>
+        <li>Data sent successfully to ThingSpeak</li>
+        <li>Live updates every 20 seconds</li>
+    </ul>
+</div>
 
-## 🧾 Arduino Code  
-The Arduino `.ino` file is included in this repository.  
-It contains:  
-- Wi-Fi setup  
-- DHT11 sensor reading logic  
-- HTTP data upload to ThingSpeak  
+<div class="section">
+    <h2>📚 Applications</h2>
+    <ul>
+        <li>Smart Agriculture</li>
+        <li>Smart Homes</li>
+        <li>Weather Monitoring</li>
+        <li>Environmental Analysis</li>
+    </ul>
+</div>
 
----
+<div class="section">
+    <h2>👩‍💻 Author</h2>
+    <p><b>Kiranmai</b><br>
+       B.Tech (ECE) — IoT & Embedded Systems<br>
+       📧 Student Project for Academic Learning
+    </p>
+</div>
 
-## 📊 ThingSpeak Dashboard  
-You can view the live IoT data here:  
-🔗 [ThingSpeak Channel – Kiranmai](https://thingspeak.com/channels/3154375)
-
-Includes:  
-- 🌡️ Temperature Gauge  
-- 💧 Humidity Gauge  
-- 📈 Real-time chart for both readings  
-
----
-
-## 🧪 Simulation Platform ##
-This project was tested using **Wokwi**.   
-
-## 🏁 Output Example  
-- Temperature: 24°C  
-- Humidity: 40%  
-- Data sent successfully to ThingSpeak  
-- Live updates every 20 seconds  
-
----
-
-## 📚 Applications  
-- Smart Agriculture  
-- Weather & Climate Monitoring  
-- IoT-based Smart Homes  
-- Environmental Analysis  
-
----
-
-## 👩‍💻 Author  
-**Kiranmai**  
-B.Tech (ECE) — IoT & Embedded Systems Project  
-📧 *Student Project for Academic Learning and IoT Practice*  
-
----
-
-## 🏷️ Tags  
-`#ESP32` `#DHT11` `#IoT` `#ThingSpeak` `#EmbeddedSystems` `#Wokwi`  
-ht# IoT Temperature & Humidity Monitoring using ESP32
-
+</body>
+</html>
 
 
