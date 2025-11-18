@@ -64,8 +64,7 @@ Includes:
 ---
 
 ## 🧪 Simulation Platform  
-This project was tested using **Wokwi**.  
-You can recreate it at 👉 [https://wokwi.com](https://wokwi.com)  
+This project was tested using **Wokwi**.   
 
 ## 🏁 Output Example  
 - Temperature: 24°C  
