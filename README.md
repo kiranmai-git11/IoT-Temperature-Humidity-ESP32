@@ -94,4 +94,4 @@ B.Tech (ECE) — IoT & Embedded Systems Project
 `#ESP32` `#DHT11` `#IoT` `#ThingSpeak` `#EmbeddedSystems` `#Wokwi`  
 ht# IoT Temperature & Humidity Monitoring using ESP32
 
-👉 [Click here to view the project](https://kiranmai-git11.github.io/IoT-Temperature-Humidity-ESP32/)
+
